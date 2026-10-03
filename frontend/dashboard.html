@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Dashboard</title><link rel="stylesheet" href="/css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header class="topbar"><div class="container"><a href="/">← Home</a><a href="/assessment">New Assessment</a><a href="/simulator">Improvement Simulator</a></div></header>
+<main class="container">
+<h1>Privacy Risk Dashboard</h1>
+<p class="notice">Aggregate statistics use assessment results only. Do not enter real personal data.</p>
+<div class="cards">
+<div class="metric"><span>Assessments</span><strong id="total">—</strong></div>
+<div class="metric"><span>Average Risk</span><strong id="avg">—</strong></div>
+<div class="metric"><span>High/Critical</span><strong id="high">—</strong></div>
+</div>
+<div class="grid two">
+<section class="card"><h2>Risk Distribution</h2><canvas id="distribution"></canvas></section>
+<section class="card"><h2>Average Category Risk</h2><canvas id="categories"></canvas></section>
+</div>
+<section class="card">
+<h2>Privacy improvement simulator</h2>
+<p>Run a what-if comparison using the latest assessment kept in your browser session.</p>
+<a class="button" href="/simulator">Open Simulator</a>
+</section>
+<section class="card">
+<h2>Industry relevance</h2>
+<p>This demonstrates privacy engineering, GRC-style risk assessment, security awareness, application security, Python development, REST API design, testing, data minimization, and defensive risk analytics.</p>
+</section>
+</main>
+<script src="/js/dashboard.js"></script>
+</body></html>
